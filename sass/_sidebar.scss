@@ -2,8 +2,16 @@
   background-color: $color-primary;
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1 / -1;
+
   display: flex;
   justify-content: center;
+
+  @media only screen and (max-width: $bp-large) {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    align-items: center;
+    justify-content: flex-end;
+  }
 }
 
 .nav-btn {
@@ -14,6 +22,11 @@
   height: 2px;
   width: 4.5rem;
   margin-top: 4rem;
+
+  @media only screen and (max-width: $bp-large) {
+    margin-top: 0;
+    margin-right: 3rem;
+  }
 }
 
 .nav-btn::before,
@@ -23,11 +36,19 @@
   width: 4.5rem;
   content: "";
   display: block;
+  @media only screen and (max-width: $bp-large) {
+    margin-top: 0;
+    margin-right: 3rem;
+  }
 }
 
 .nav-btn::before {
-  transform: translateY(-1.5rem);
+  transform: translateY(-1.2rem);
+  @media only screen and (max-width: $bp-large) {
+  }
 }
 .nav-btn::after {
-  transform: translateY(1.3rem);
+  transform: translateY(1rem);
+  @media only screen and (max-width: $bp-large) {
+  }
 }
