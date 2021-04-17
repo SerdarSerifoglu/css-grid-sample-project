@@ -256,9 +256,7 @@ body {
   @media only screen and (max-width: 50em) {
     .story__img--1 {
       grid-column: 1 / 5;
-      grid-row: 1 / -1;
-      height: 100%;
-      width: 100%; } }
+      grid-row: 1 / -1; } }
 
 .story__img--2 {
   width: 115%;
